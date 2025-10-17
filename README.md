@@ -22,6 +22,7 @@ DockerApp/
 ├── index.html      # Página principal del sitio
 ├── styles.css      # Hoja de estilos CSS
 └── Dockerfile      # Configuración del contenedor
+```
 
 ## 🚀 Cómo Ejecutar el Proyecto
 
@@ -55,6 +56,7 @@ Aitor (Thorqui)
 
 Asegúrate de tener Docker instalado en tu sistema antes de ejecutar el proyecto.
 Puedes personalizar el puerto (por ejemplo, cambiar 8080 por otro) ajustando el comando docker run.
+
 
 
 
