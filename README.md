@@ -33,9 +33,11 @@ Sigue estos pasos para correr el proyecto localmente:
 2. **Construye la imagen Docker**
    ```docker build -t dockerapp .
 3. **Ejecuta el contenedor**
-   ```docker run -d -p 8080:80 --name web dockerapp
+   ```bash
+   docker run -d -p 8080:80 --name web dockerapp
 5. **Accede al sitio**
-   ```Abre tu navegador y visita:
+   ```bash
+   Abre tu navegador y visita:
 🌐 http://localhost:8080
 
 ## 🧱 Dockerfile
@@ -50,4 +52,5 @@ Aitor (Thorqui)
 
 Asegúrate de tener Docker instalado en tu sistema antes de ejecutar el proyecto.
 Puedes personalizar el puerto (por ejemplo, cambiar 8080 por otro) ajustando el comando docker run.
+
 
