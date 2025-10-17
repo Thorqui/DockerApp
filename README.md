@@ -32,12 +32,18 @@ Sigue estos pasos para correr el proyecto localmente:
    ```bash
    git clone https://github.com/Thorqui/DockerApp.git
    cd DockerApp
+   ```
+   
 2. **Construye la imagen Docker**
    ```bash
    docker build -t dockerapp .
+   ```
+   
 3. **Ejecuta el contenedor**
    ```bash
    docker run -d -p 8080:80 --name web dockerapp
+   ```
+   
 5. **Accede al sitio**
    ```bash
    Abre tu navegador y visita:
@@ -47,15 +53,17 @@ Sigue estos pasos para correr el proyecto localmente:
    ```bash
   FROM nginx:latest
   COPY . /usr/share/nginx/html
+   ```
 
 ## 👨‍💻 Autor
-Aitor (Thorqui)
+Aitor Quilez Herrero (Thorqui)
 🔗 GitHub - Thorqui
 
-💡 **Notas Adicionales**
+## 💡 Notas Adicionales**
 
-Asegúrate de tener Docker instalado en tu sistema antes de ejecutar el proyecto.
-Puedes personalizar el puerto (por ejemplo, cambiar 8080 por otro) ajustando el comando docker run.
+- Asegúrate de tener Docker instalado en tu sistema antes de ejecutar el proyecto.
+- Puedes personalizar el puerto (por ejemplo, cambiar 8080 por otro) ajustando el comando docker run.
+
 
 
 
