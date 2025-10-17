@@ -1,54 +1,52 @@
-# 🐳 DockerApp – Sitio Web Estático con Docker
+# 🐳 DockerApp - Sitio Web Estático con Docker
 
-Proyecto sencillo para mi portafolio: una aplicación web estática servida con **Nginx** dentro de un contenedor **Docker**.  
-Perfecto como introducción al uso de Docker para desplegar sitios web.
+Un proyecto simple y elegante para tu portafolio: una **aplicación web estática** servida con **Nginx** en un contenedor **Docker**.  
+Ideal para aprender los fundamentos de Docker y despliegue de sitios web.
 
----
+## 📋 Descripción
 
-## 🚀 Tecnologías utilizadas
+DockerApp es una aplicación web estática que utiliza **HTML5**, **CSS3** y **Nginx** dentro de un contenedor Docker. Este proyecto es perfecto para iniciarse en la contenedorización y entender cómo desplegar sitios web de forma eficiente.
 
-- **HTML5** y **CSS3**
-- **Nginx** como servidor web
-- **Docker** para contenedorización
+## 🛠️ Tecnologías Utilizadas
 
----
+| Tecnología   | Descripción                     |
+|--------------|---------------------------------|
+| **HTML5**    | Estructura del sitio web        |
+| **CSS3**     | Estilos visuales                |
+| **Nginx**    | Servidor web ligero             |
+| **Docker**   | Contenedorización del proyecto  |
 
-## 🧩 Estructura del proyecto
-
+## 📂 Estructura del Proyecto
 DockerApp/
-│
-├── index.html # Página principal
-├── styles.css # Estilos del sitio
-└── Dockerfile # Configuración Docker
+├── index.html      # Página principal del sitio
+├── styles.css      # Hoja de estilos CSS
+└── Dockerfile      # Configuración del contenedor
 
+## 🚀 Cómo Ejecutar el Proyecto
 
----
+Sigue estos pasos para correr el proyecto localmente:
 
-## ⚙️ Cómo ejecutar el proyecto localmente 
+1. **Clona el repositorio**  
+   ```bash
+   git clone https://github.com/Thorqui/DockerApp.git
+   cd DockerApp
+2. **Construye la imagen Docker**
+   docker build -t dockerapp .
+3. **Ejecuta el contenedor**
+   docker run -d -p 8080:80 --name web dockerapp
+5. **Accede al sitio**
+   Abre tu navegador y visita:
+🌐 http://localhost:8080
 
-1️⃣ **Clona este repositorio**
-```bash
-git clone https://github.com/Thorqui/DockerApp.git
-cd DockerApp
+## 🧱 Dockerfile
+  FROM nginx:latest
+  COPY . /usr/share/nginx/html
 
-2️⃣ Construye la imagen Docker:
-
-docker build -t dockerapp .
-
-
-3️⃣ Ejecuta el contenedor:
-
-docker run -d -p 8080:80 --name web dockerapp
-
-
-4️⃣ Abre el sitio en el navegador:
-👉 http://localhost:8080
-
-🧱 Dockerfile utilizado
-FROM nginx:latest
-COPY . /usr/share/nginx/html
-
-👨‍💻 Autor
-
+## 👨‍💻 Autor
 Aitor (Thorqui)
-🔗 GitHub – Thorqui
+🔗 GitHub - Thorqui
+
+💡 **Notas Adicionales**
+
+Asegúrate de tener Docker instalado en tu sistema antes de ejecutar el proyecto.
+Puedes personalizar el puerto (por ejemplo, cambiar 8080 por otro) ajustando el comando docker run.
