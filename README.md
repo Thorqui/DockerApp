@@ -1,7 +1,7 @@
 # 🐳 DockerApp - Sitio Web Estático con Docker
 
-Un proyecto simple y elegante para tu portafolio: una **aplicación web estática** servida con **Nginx** en un contenedor **Docker**.  
-Ideal para aprender los fundamentos de Docker y despliegue de sitios web.
+Una **aplicación web estática** servida con **Nginx** en un contenedor **Docker**.  
+Para aprender los fundamentos de Docker y despliegue de sitios web.
 
 ## 📋 Descripción
 
@@ -63,6 +63,7 @@ Aitor Quilez Herrero (Thorqui)
 
 - Asegúrate de tener Docker instalado en tu sistema antes de ejecutar el proyecto.
 - Puedes personalizar el puerto (por ejemplo, cambiar 8080 por otro) ajustando el comando docker run.
+
 
 
 
